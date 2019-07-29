@@ -31,8 +31,6 @@ set exrc
 set secure
 " Enable line numbers
 set number
-" Enable syntax highlighting
-syntax on
 " Make tabs as wide as two spaces
 set tabstop=4
 " contorl reindent operations (<< and >>)
@@ -83,6 +81,8 @@ endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
+" Toggle hightlight of search
+:noremap <F3> :set hlsearch!<CR>
 
 " Automatic commands
 if has("autocmd")
