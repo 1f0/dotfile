@@ -34,9 +34,16 @@ set number
 " Enable syntax highlighting
 syntax on
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
+" contorl reindent operations (<< and >>)
+set ai "Auto indent of current line
+set si "Smart indent of syntax/style of the code
+set shiftwidth=4
+" use spaces insted of tabs
+set expandtab
+set smarttab
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:▸\ ,trail:·,eol:↲,nbsp:_
 set list
 " Highlight searches
 set hlsearch
