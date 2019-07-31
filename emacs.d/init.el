@@ -11,9 +11,6 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(use-package try
-  :ensure t)
-
 (use-package which-key
   :ensure t
   :config (which-key-mode))
@@ -114,3 +111,6 @@
 (use-package highlight-parentheses
   :ensure t
   :init)
+
+;; if windows
+(global-set-key [24 pause] (quote save-buffers-kill-terminal))

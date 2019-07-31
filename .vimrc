@@ -43,6 +43,7 @@ set smarttab
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:↲,nbsp:_
 set list
+set cursorline
 " Highlight searches
 set hlsearch
 " Ignore case of searches
