@@ -15,9 +15,6 @@
   :ensure t
   :config (which-key-mode))
 
-(use-package color-theme
-  :ensure t)
-
 (use-package zenburn-theme
   :ensure t
   :config (load-theme 'zenburn t))
@@ -112,5 +109,6 @@
   :ensure t
   :init)
 
-;; if windows
+;; if windows, change pause to ctrl-C
 (global-set-key [24 pause] (quote save-buffers-kill-terminal))
+
