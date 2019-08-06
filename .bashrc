@@ -7,8 +7,13 @@ function grepaix {
 }
 
 # docker tools
-alias kb='kubectl'
 alias dc='docker-compose'
+alias dclr='docker system prune'
+alias kb='kubectl'
+alias kbps='kb get pods --all-namespaces'
+source <(kubectl completion bash)
+complete -F __start_kubectl kb
+
 
 # z jump
 source ~/.rupa.z.sh
@@ -20,6 +25,7 @@ alias _='sudo'
 alias l='ls -lah'
 alias ll='ls -lh'
 ## git
+alias g='git'
 alias gst='git status'
 alias ga='git add'
 alias gaa='git add --all'
@@ -30,6 +36,7 @@ alias gcb='git checkout -b'
 alias gd='git diff'
 alias gps='git push'
 alias gpl='git pull'
+alias g11='g++ -std=c++11'
 
 # ffmpeg shortcut
 function v2gif {
@@ -57,4 +64,9 @@ alias msbd='MSBuild.exe'
 alias emacs='winpty emacs -nw'
 alias dk='winpty docker'
 alias rmcr='sed -i s/\r//g'
+
+alias kbdash='kb proxy --port=8081 & start chrome http://localhost:8081/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/'
+function act_kb {
+    export KUBECONFIG="$HOME/Documents/k8s-config/kubeconfig-dev-monitoring.txt.bak"
+}
 

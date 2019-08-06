@@ -112,3 +112,5 @@
 ;; if windows, change pause to ctrl-C
 (global-set-key [24 pause] (quote save-buffers-kill-terminal))
 
+(setq user-emacs-directory-warning nil)
+
