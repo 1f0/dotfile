@@ -1,0 +1,3 @@
+[submodule "3rd/rupza"]
+	path = 3rd/rupza
+	url = https://github.com/felipesousa/rupza
