@@ -30,6 +30,7 @@ alias gst='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gb='git branch'
+alias gco='git checkout'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gcb='git checkout -b'
@@ -51,6 +52,7 @@ function frec {
 # For git bash for Windows Only
 alias pw="ps -W"
 alias pfi="pw | grep"
+alias pl="powershell -File"
 function pwdc() {
     pwd -W | sed 's/\//\\/g' | clip;
 }
@@ -67,6 +69,6 @@ alias rmcr='sed -i s/\r//g'
 
 alias kbdash='kb proxy --port=8081 & start chrome http://localhost:8081/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/'
 function act_kb {
-    export KUBECONFIG="$HOME/Documents/k8s-config/kubeconfig-dev-monitoring.txt.bak"
+    export KUBECONFIG="$HOME/Documents/k8s-config/kubeconfig-dev-monitoring.txt"
 }
 
