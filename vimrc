@@ -1,4 +1,5 @@
-colorscheme rupza
+" Place this as ~/.vimrc
+" colorscheme rupza
 
 " Make Vim more useful
 set nocompatible
